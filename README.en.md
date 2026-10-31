@@ -656,7 +656,7 @@ Released under the **MIT License**; see [LICENSE](LICENSE) for the full text.
 ```
 MIT License
 
-Copyright (c) 2026 NginxForge contributors
+Copyright (c) 2026 琦琦
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

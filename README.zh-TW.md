@@ -660,7 +660,7 @@ perf(semdiff): 正規化階段改用簽章快取
 ```
 MIT License
 
-Copyright (c) 2026 NginxForge contributors
+Copyright (c) 2026 琦琦
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
