@@ -1,0 +1,3 @@
+# NginxForge has no third-party runtime dependencies.
+# This file exists so that `pip install -r requirements.txt` is a no-op and
+# CI pipelines that expect it do not fail.

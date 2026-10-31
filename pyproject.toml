@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nginxforge"
+version = "1.0.0"
+description = "Zero-dependency, offline-first nginx configuration parser, auditor, fixer and generator"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "NginxForge contributors" }]
+keywords = ["nginx", "configuration", "linter", "audit", "security", "devops", "cli"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: System :: Systems Administration",
+    "Topic :: Software Development :: Quality Assurance",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["build", "twine", "coverage"]
+
+[project.urls]
+Homepage = "https://github.com/gitstq/NginxForge"
+Repository = "https://github.com/gitstq/NginxForge"
+Issues = "https://github.com/gitstq/NginxForge/issues"
+
+[project.scripts]
+nginxforge = "nginxforge.cli:main"
+
+[tool.setuptools]
+packages = ["nginxforge", "nginxforge.rules", "nginxforge.reporters"]
+
+[tool.setuptools.package-data]
+nginxforge = ["py.typed"]
+
+[tool.setuptools.command.sdist]
+include = ["nginxforge", "tests", "pyproject.toml", "README.md", "LICENSE"]
